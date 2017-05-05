@@ -12,9 +12,9 @@ https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf
 
 ### geth
 https://geth.ethereum.org/  
-$ brew tap ethereum/ethereum  
-$ brew install ethereum  
-$ geth --version  
+$ `brew tap ethereum/ethereum`  
+$ `brew install ethereum`  
+$ `geth --version`  
 
 ### solcjs
 $ npm install -g solc  
@@ -37,6 +37,13 @@ $ testrpc
 
 ### Intellij-Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
+
+### Remix
+https://github.com/ethereum/remix  
+$ `git clone https://github.com/ethereum/remix`  
+$ `cd remix`  
+$ `npm install`  
+$ `npm start`  
 
 ### Test Networks
 
