@@ -1,7 +1,7 @@
 # Getting started with Solidity development - OS X
 
 ## Solidity Language Learning
-https://solidity.readthedocs.io/en/develop/  
+Read all the pages, twice: https://solidity.readthedocs.io/en/develop/  
 https://www.youtube.com/watch?v=8jI1TuEaTro  
 
 ### Blogs & Guides
