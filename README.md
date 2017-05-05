@@ -51,8 +51,16 @@ https://github.com/ethereum/remix
 Rinkeby (modern)  
 https://www.rinkeby.io/  
 
+## Security Considirations
+
+https://solidity.readthedocs.io/en/develop/security-considerations.html
 
 ## Solidity Design Patterns
+
+### The Withdraw Pattern
+
+### Working with time - Block ids as time units
+
 
 
 ## Data Structures and Utils
