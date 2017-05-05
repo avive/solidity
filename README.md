@@ -24,10 +24,12 @@ Follow instructions to build from source
 $ solc --version
 
 ### Truffle 
+https://github.com/trufflesuite/truffle
 $ sudo npm install -g truffle
 $ truffle
 
 ### Testrpc
+https://github.com/ethereumjs/testrpc
 $ sudo npm install -g ethereumjs-testrpc
 $ testrpc
 
