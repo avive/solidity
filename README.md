@@ -1,6 +1,6 @@
 # Getting started with Solidity development on OS X
 
-## Solidity Language Learning  
+## Solidity Language Learning
 https://solidity.readthedocs.io/en/develop/  
 
 ### Blogs & Guides
@@ -20,12 +20,12 @@ $ geth --version
 $ npm install -g solc  
 $ solcjs --version  
 
-### solc 
+### solc
 http://solidity.readthedocs.io/en/develop/installing-solidity.html  
 Follow instructions to build from source  
 $ solc --version  
 
-### Truffle 
+### Truffle
 https://github.com/trufflesuite/truffle  
 $ sudo npm install -g truffle  
 $ truffle  
@@ -35,7 +35,7 @@ https://github.com/ethereumjs/testrpc
 $ sudo npm install -g ethereumjs-testrpc  
 $ testrpc  
 
-### Intellij-Solidity syntax support   
+### Intellij-Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
 
 ### Test Networks
