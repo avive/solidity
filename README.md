@@ -43,9 +43,9 @@ https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 ### Remix
 https://github.com/ethereum/remix  
 `$ git clone https://github.com/ethereum/remix`  
-`$ `cd remix`  
-`$ `npm install`  
-`$ `npm start`  
+`$ cd remix`  
+`$ npm install`  
+`$ npm start`  
 
 ### Test Networks
 
