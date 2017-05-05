@@ -34,8 +34,10 @@ $ testrpc
 ### Intellij-Solidity syntax support 
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
+## Solidity Language Learning
+https://solidity.readthedocs.io/en/develop/
 
-## Solidiry Design Patterns
+## Solidity Design Patterns
 
 
 ## Data Structures and Utils
