@@ -1,9 +1,12 @@
 # Getting started with Solidity development on OS X
 
-## Test Networks
+## Solidity Language Learning
+https://solidity.readthedocs.io/en/develop/
 
-Rinkeby
-https://www.rinkeby.io/
+### Blogs & Guides
+https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf
+
 
 ## Dev tools - OS X
 
@@ -36,12 +39,10 @@ $ testrpc
 ### Intellij-Solidity syntax support 
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
-## Solidity Language Learning
-https://solidity.readthedocs.io/en/develop/
+### Test Networks
+Rinkeby
+https://www.rinkeby.io/
 
-### Blogs & Guides
-https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
-https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf
 
 ## Solidity Design Patterns
 
