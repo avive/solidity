@@ -27,8 +27,9 @@ Follow instructions to build from source
 
 ### Truffle
 https://github.com/trufflesuite/truffle  
-`$ sudo npm install -g truffle`  
-`$ truffle`  
+`$ npm install -g truffle`  
+'$ cd <new-project-folder>`  
+`$ truffle init`  
 
 ### Testrpc
 https://github.com/ethereumjs/testrpc  
