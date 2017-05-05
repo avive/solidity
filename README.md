@@ -5,7 +5,7 @@
 Rinkeby
 https://www.rinkeby.io/
 
-## dev tools - OS X
+## Dev tools - OS X
 
 ### geth
 https://geth.ethereum.org/
