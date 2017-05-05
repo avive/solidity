@@ -1,36 +1,37 @@
-Getting started with Solidity development on OS X
+# Getting started with Solidity development on OS X
 
-# test networks
+## Test Networks
 
-## Rinkeby - https://www.rinkeby.io/
+Rinkeby
+https://www.rinkeby.io/
 
-# dev tools - OS X
-## geth
+## dev tools - OS X
+
+### geth
 https://geth.ethereum.org/
 $ brew tap ethereum/ethereum
 $ brew install ethereum
 $ geth --version
 
-## solcjs
+### solcjs
 $ npm install -g solc
 $ solcjs --version
 
-## solc 
+### solc 
 http://solidity.readthedocs.io/en/develop/installing-solidity.html
 build from source
 $ solc --version
 
-## Intellij-Solidity syntax support 
+### Intellij-Solidity syntax support 
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
-## Truffle 
+### Truffle 
 $ sudo npm install -g truffle
 $ truffle
 
-## Testrpc
+### Testrpc
 $ sudo npm install -g ethereumjs-testrpc
 $ testrpc
-
 
 
 ## Solidiry Design Patterns
