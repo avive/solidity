@@ -20,11 +20,8 @@ $ solcjs --version
 
 ### solc 
 http://solidity.readthedocs.io/en/develop/installing-solidity.html
-build from source
+Follow instructions to build from source
 $ solc --version
-
-### Intellij-Solidity syntax support 
-https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
 ### Truffle 
 $ sudo npm install -g truffle
@@ -33,6 +30,9 @@ $ truffle
 ### Testrpc
 $ sudo npm install -g ethereumjs-testrpc
 $ testrpc
+
+### Intellij-Solidity syntax support 
+https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
 
 ## Solidiry Design Patterns
