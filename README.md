@@ -9,6 +9,7 @@ https://www.rinkeby.io/
 
 ### geth
 https://geth.ethereum.org/
+
 $ brew tap ethereum/ethereum
 $ brew install ethereum
 $ geth --version
