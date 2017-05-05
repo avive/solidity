@@ -39,7 +39,8 @@ $ testrpc
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
 
 ### Test Networks
-Rinkeby  
+
+Rinkeby (modern)  
 https://www.rinkeby.io/  
 
 
