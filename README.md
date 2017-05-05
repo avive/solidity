@@ -1,23 +1,36 @@
 # test networks
 
-Rinkeby - https://www.rinkeby.io/
+## Rinkeby - https://www.rinkeby.io/
 
-# dev tools
-Intellij-Solidity  -https://plugins.jetbrains.com/plugin/9475-intellij-solidity
+# dev tools - OS X
+## Geth
+https://geth.ethereum.org/
+$ brew tap ethereum/ethereum
+$ brew install ethereum
+
+## solcjs
+$ npm install -g solc
+$ solcjs --version
+
+## solc 
+http://solidity.readthedocs.io/en/develop/installing-solidity.html
+
+
+## Intellij-Solidity  -https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
 ## Truffle 
 $ sudo npm install -g truffle
+$ truffle
 
 ## Testrpc
 $ sudo npm install -g ethereumjs-testrpc
 $ testrpc
 
-# solidity
+# Solidity
 
 
 
-## Patterns
-
+## Solidiry Design Patterns
 
 
 ## Data Structures and Utils
