@@ -37,6 +37,10 @@ https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 ## Solidity Language Learning
 https://solidity.readthedocs.io/en/develop/
 
+### Blogs & Guides
+https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf
+
 ## Solidity Design Patterns
 
 
