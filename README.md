@@ -50,7 +50,8 @@ https://github.com/ethereum/remix
 ### Test Networks
 
 Rinkeby (modern)  
-https://www.rinkeby.io/  
+https://www.rinkeby.io/  -> connect yourself  
+Download the json file and follow the instructions  
 
 ## Security Considirations
 
