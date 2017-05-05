@@ -12,38 +12,38 @@ https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf
 
 ### geth
 https://geth.ethereum.org/  
-$ `brew tap ethereum/ethereum`  
-$ `brew install ethereum`  
-$ `geth --version`  
+`$ brew tap ethereum/ethereum`  
+`$ brew install ethereum`  
+`$ geth --version`  
 
 ### solcjs
-$ npm install -g solc  
-$ solcjs --version  
+`$ npm install -g solc`  
+`$ solcjs --version`  
 
 ### solc
 http://solidity.readthedocs.io/en/develop/installing-solidity.html  
 Follow instructions to build from source  
-$ solc --version  
+`$ solc --version`  
 
 ### Truffle
 https://github.com/trufflesuite/truffle  
-$ sudo npm install -g truffle  
-$ truffle  
+`$ sudo npm install -g truffle`  
+`$ truffle`  
 
 ### Testrpc
 https://github.com/ethereumjs/testrpc  
-$ sudo npm install -g ethereumjs-testrpc  
-$ testrpc  
+`$ sudo npm install -g ethereumjs-testrpc`  
+`$ testrpc`  
 
 ### Intellij-Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
 
 ### Remix
 https://github.com/ethereum/remix  
-$ `git clone https://github.com/ethereum/remix`  
-$ `cd remix`  
-$ `npm install`  
-$ `npm start`  
+`$ git clone https://github.com/ethereum/remix`  
+`$ `cd remix`  
+`$ `npm install`  
+`$ `npm start`  
 
 ### Test Networks
 
