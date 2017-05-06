@@ -14,6 +14,12 @@ https://www.ethereum.org/dao
 https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05  
 https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf  
 
+### Forums & Community
+https://ethereum.stackexchange.com/  
+https://gitter.im/ethereum/home  
+https://www.reddit.com/r/ethereum/  
+https://stackoverflow.com/questions/tagged/ethereum  
+
 ### Dapps open source examples
 https://github.com/ethereum/dapp-bin  
 
