@@ -57,7 +57,13 @@ Download the json file and follow the instructions
 
 https://solidity.readthedocs.io/en/develop/security-considerations.html
 
+
 ## Solidity Design Patterns
+
+### Testing Patterns
+* Testing with testrpc
+* Testing a private test network
+* Testing with a public testnet
 
 ### The Withdraw Pattern
 
@@ -72,9 +78,9 @@ https://www.youtube.com/watch?v=XkJ8mg-R7C0
 
 ### Classic Contracts
 
-### Milti-sig Wallet
+### Milti-sig Wallets
 
-### Crowd Funding Campaign examples
+### Crowd Funding Campaigns - design and implementation examples
 Golem Campaign
 https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
 https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
