@@ -1,10 +1,17 @@
 # Getting started with Solidity development - OS X
 
 ## Solidity Language Learning
+
+### docs
 Read all the pages, twice: https://solidity.readthedocs.io/en/develop/  
 https://www.youtube.com/watch?v=8jI1TuEaTro  
 
+
 ### Blogs & Guides
+https://github.com/fivedogit/solidity-baby-steps/tree/master/contracts/  
+https://www.ethereum.org/token    
+https://www.ethereum.org/crowdsale  
+https://www.ethereum.org/dao  
 https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05  
 https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf  
 
