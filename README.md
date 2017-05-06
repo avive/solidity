@@ -102,6 +102,7 @@ https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Archi
 https://www.youtube.com/watch?v=XkJ8mg-R7C0  
 https://github.com/ConsenSys/gnosis-contracts  
 https://github.com/ConsenSys  
+https://github.com/toadkicker/solidity-patterns  
 
 ## Data Structures and Utils
 
