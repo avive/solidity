@@ -76,6 +76,8 @@ https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Archi
 https://www.youtube.com/watch?v=XkJ8mg-R7C0  
 
 ## Data Structures and Utils
+* Language provided data structures
+* 3rd-party data structures
 
 ### Classic Contracts
 
