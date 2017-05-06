@@ -93,6 +93,7 @@ https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns
 https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Architecture-Designs  
 https://www.youtube.com/watch?v=XkJ8mg-R7C0  
 https://github.com/ConsenSys/gnosis-contracts  
+https://github.com/ConsenSys  
 
 ## Data Structures and Utils
 ### Language provided data structures
