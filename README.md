@@ -70,3 +70,15 @@ https://www.youtube.com/watch?v=XkJ8mg-R7C0
 
 ## Data Structures and Utils
 
+### Classic Contracts
+
+### Milti-sig Wallet
+
+### Crowd Funding Campaign examples
+Golem Campaign
+https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
+https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
+https://github.com/golemfactory/golem-crowdfunding  
+
+
+
