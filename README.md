@@ -47,6 +47,12 @@ https://github.com/trufflesuite/truffle
 '$ cd <new-project-folder>`  
 `$ truffle init`  
 
+### Dapple
+https://github.com/dapphub/dapple   
+
+### Webpack-based dev seed
+https://github.com/uzyn/ethereum-webpack-example-dapp  
+
 ### Testrpc
 https://github.com/ethereumjs/testrpc  
 `$ sudo npm install -g ethereumjs-testrpc`  
