@@ -125,7 +125,7 @@ https://github.com/ConsenSys/dapp-store-contracts
 ### Milti-sig Wallets
 
 ### Crowd Funding Campaigns - design and implementation examples
-Golem Campaign  
+Golem Campaign    
 https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
 https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
 https://github.com/golemfactory/golem-crowdfunding  
