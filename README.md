@@ -64,6 +64,7 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 * Testing with testrpc
 * Testing a private test network
 * Testing with a public testnet
+* Security audits options
 
 ### The Withdraw Pattern
 
