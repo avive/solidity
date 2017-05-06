@@ -66,11 +66,22 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 * Testing with a public testnet
 * Security audits options
 
+### Enahnced Security with Multi-sig Wallets
+
+### Payments Lockout Pattern
+
+### Auction Patterns
+
+### Crowd Funding Patterns
+
 ### The Withdraw Pattern
+* Don't send money - let other widthdraw what they are authorized to get
 
-### Working with time - Block ids as time units
+### Working with time
+* Block ids as time units
+* Other options for time-based operations
 
-### Design Patterns Collections
+### Design Patterns Resources
 https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns  
 https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Architecture-Designs  
 https://www.youtube.com/watch?v=XkJ8mg-R7C0  
