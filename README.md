@@ -117,7 +117,9 @@ https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150
 https://github.com/golemfactory/golem-crowdfunding  
 https://github.com/ConsenSys/dapp-store-contracts  
 
-
+### Blockchain explorers and network stats
+https://etherchain.org/  
+https://ethstats.net/  
 
 
 
