@@ -68,6 +68,8 @@ https://github.com/ethereum/remix
 `$ npm install`  
 `$ npm start`  
 
+### Debugging, Logging & Events
+
 ### Test Networks
 
 Rinkeby (modern)  
