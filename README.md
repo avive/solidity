@@ -92,10 +92,12 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns  
 https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Architecture-Designs  
 https://www.youtube.com/watch?v=XkJ8mg-R7C0  
+https://github.com/ConsenSys/gnosis-contracts  
 
 ## Data Structures and Utils
-* Language provided data structures
-* 3rd-party data structures
+### Language provided data structures
+### 3rd-party data structures
+#### key-value store
 
 ### Classic Contracts
 
@@ -106,6 +108,9 @@ Golem Campaign
 https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
 https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
 https://github.com/golemfactory/golem-crowdfunding  
+https://github.com/ConsenSys/dapp-store-contracts  
+
+
 
 
 
