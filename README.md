@@ -98,11 +98,12 @@ https://github.com/ConsenSys
 
 ## Data Structures and Utils
 
-### Language provided data structures
+### Built-in data structures
 
-### 3rd-party data structures
+### Additional data structures
+https://github.com/ethereum/dapp-bin/tree/master/library  
 
-#### key-value store
+#### key-value store patterns
 https://github.com/ConsenSys/dapp-store-contracts  
 
 ### Classic Contracts
