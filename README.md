@@ -97,9 +97,13 @@ https://github.com/ConsenSys/gnosis-contracts
 https://github.com/ConsenSys  
 
 ## Data Structures and Utils
+
 ### Language provided data structures
+
 ### 3rd-party data structures
+
 #### key-value store
+https://github.com/ConsenSys/dapp-store-contracts  
 
 ### Classic Contracts
 
