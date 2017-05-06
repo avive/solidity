@@ -83,6 +83,8 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 
 ## Solidity Design Patterns
 
+https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
+
 ### Testing Patterns
 * Testing with testrpc
 * Testing a private test network
