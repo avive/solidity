@@ -120,10 +120,14 @@ https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 * this === address
 * The unamed function with optional payability
 
-## Security Considirations
+## Security Considirations and Best Practices
 https://solidity.readthedocs.io/en/develop/security-considerations.html
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
+* Beware of external contracts calls - they can call back to your contract and change its control flow
+* Private data is viewable by anyone
+* All your public contract methods may be called maliciously
+* Bug bounty hunt your contracts on a test network and perform security audits with highly reputable 3rd parties
 
 ## Solidity Design Patterns
 https://github.com/ConsenSys/smart-contract-best-practices
