@@ -91,7 +91,7 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 * Getting call data from the Message object - msg.value, msg.sender, msg.data
 * Working with transactions - tx.*  
 * Working with Gas - msg.gas,  tx.gasprice - gas caller is willing to pay  
-* 
+* this === address
 
 
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
@@ -101,6 +101,8 @@ https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis
 * Testing a private test network
 * Testing with a public testnet
 * Security audits options
+* Testing with docker
+https://github.com/Capgemini-AIE/ethereum-docker  
 
 ### Enahnced Security with Multi-sig Wallets
 
