@@ -28,24 +28,32 @@ https://github.com/ethereum/dapp-bin/tree/master/getting%20started
 
 ### geth
 https://geth.ethereum.org/  
-`$ brew tap ethereum/ethereum`  
-`$ brew install ethereum`  
-`$ geth --version`  
+```
+$ brew tap ethereum/ethereum    
+$ brew install ethereum  
+$ geth --version  
+```
 
 ### solcjs
-`$ npm install -g solc`  
-`$ solcjs --version`  
+```
+$ npm install -g solc 
+$ solcjs --version
+```
 
 ### solc
 http://solidity.readthedocs.io/en/develop/installing-solidity.html  
 Follow instructions to build from source  
-`$ solc --version`  
+```
+$ solc --version  
+```
 
 ### Truffle
 https://github.com/trufflesuite/truffle  
-`$ npm install -g truffle`  
-'$ cd <new-project-folder>`  
-`$ truffle init`  
+```
+$ npm install -g truffle
+$ cd <new-project-folder>
+$ truffle init
+```
 
 ### Dapple
 https://github.com/dapphub/dapple   
@@ -55,20 +63,28 @@ https://github.com/uzyn/ethereum-webpack-example-dapp
 
 ### Testrpc
 https://github.com/ethereumjs/testrpc  
-`$ sudo npm install -g ethereumjs-testrpc`  
-`$ testrpc`  
+```
+$ sudo npm install -g ethereumjs-testrpc
+$ testrpc
+```
+
 * Testrpc dcoker
-`$ docker run -d -p 8545:8545 ethereumjs/testrpc:latest`   
+```
+$ docker run -d -p 8545:8545 ethereumjs/testrpc:latest
+```
 
 ### Intellij-Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
 
 ### Remix
 https://github.com/ethereum/remix  
-`$ git clone https://github.com/ethereum/remix`  
-`$ cd remix`  
-`$ npm install`  
-`$ npm start`  
+
+```
+$ git clone https://github.com/ethereum/remix
+$ cd remix
+$ npm install
+$ npm start
+```
 
 ### Debugging, Logging & Events
 
@@ -175,10 +191,3 @@ https://etherscan.io/
 
 ## Disassembliy and Decompilers
 https://etherscan.io/opcode-tool?a=0x9e1b57fc92eba6434251a8458811c32690f32c45  
-
-
-
-
-
-
-
