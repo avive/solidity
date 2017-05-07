@@ -167,6 +167,7 @@ A contract for registration of contract addresses deployed by an external accoun
 
 ### Throw Loudly Pattern
 * Excplicitally, beofore modifying any state when any state mutation condition fails
+* Test and throw for each pre-condition seprately
 
 ### Enahnced Security with Multi-sig Wallets
 
