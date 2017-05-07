@@ -88,6 +88,10 @@ $ npm install
 $ npm start
 ```
 
+### Zepellin Solidity
+Open source solidity libs and basic contracts
+https://github.com/OpenZeppelin/zeppelin-solidity
+
 ### Debugging, Logging & Events
 
 ### Test Networks
