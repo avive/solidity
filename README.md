@@ -79,6 +79,12 @@ Download the json file and follow the instructions
 ## Basic Concepts
 * contract
 * account types - external or contract. Has an address and a balance. External accounts have key paris
+* transactions - tpyes: contract creation, move funds to an account, call a contract method
+* message calls - calldata area, used in transactions
+* delegate calls - using caller context for library / util functions
+* Gas - gas price and gas amount set by transaction initiator. Used for code execution
+* Events
+* EVM - stack-based machine, contract storage and memory (runtime env)
 * throw
 * Suicide
 * Get block number
