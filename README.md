@@ -84,6 +84,7 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 ## Solidity Design Patterns
 
 ### Built-in Basic Patterns and Objects
+* throw
 * Suicide
 * Get block number
 * Constant fucntions
@@ -92,6 +93,7 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 * Working with transactions - tx.*  
 * Working with Gas - msg.gas,  tx.gasprice - gas caller is willing to pay  
 * this === address
+* The unamed function with optional payability
 
 
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
@@ -131,6 +133,9 @@ https://github.com/toadkicker/solidity-patterns
 ## Data Structures and Utils
 
 ### Built-in data structures
+* structs
+* mappings
+* state vars
 
 ### Additional data structures
 https://github.com/ethereum/dapp-bin/tree/master/library  
