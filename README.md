@@ -83,6 +83,17 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 
 ## Solidity Design Patterns
 
+### Built-in Basic Patterns and Objects
+* Suicide
+* Get block number
+* Constant fucntions
+* Obtaining contract address
+* Getting call data from the Message object - msg.value, msg.sender, msg.data
+* Working with transactions - tx.*  
+* Working with Gas - msg.gas,  tx.gasprice - gas caller is willing to pay  
+* 
+
+
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
 ### Testing Patterns
@@ -103,6 +114,7 @@ https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis
 * Don't send money - let other widthdraw what they are authorized to get
 
 ### Working with time
+* block.timestamp === Now() - epoch time in secs  
 * Block ids as time units
 * Other options for time-based operations
 
