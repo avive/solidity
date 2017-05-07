@@ -57,6 +57,8 @@ https://github.com/uzyn/ethereum-webpack-example-dapp
 https://github.com/ethereumjs/testrpc  
 `$ sudo npm install -g ethereumjs-testrpc`  
 `$ testrpc`  
+* Testrpc dcoker
+`$ docker run -d -p 8545:8545 ethereumjs/testrpc:latest`   
 
 ### Intellij-Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
