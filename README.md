@@ -129,6 +129,12 @@ https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis
 
 ### Testing Patterns
 * Testing with testrpc
+* Testing with testrpc and truffle
+```
+https://github.com/ethereumjs/testrpc
+http://truffleframework.com/docs/getting_started/javascript-tests
+```
+
 * Testing a private test network
 * Testing with a public testnet
 * Security audits options
