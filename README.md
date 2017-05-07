@@ -186,6 +186,13 @@ https://github.com/ConsenSys/dapp-store-contracts
 
 ### Milti-sig Wallets
 
+### Circut Breakers
+Designing for failure and worse-case scenarios
+
+### Risk Management
+* Rate limiting
+* Max usage / Lockouts
+
 ### Crowd Funding Campaigns - design and implementation examples
 Golem Campaign    
 https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
