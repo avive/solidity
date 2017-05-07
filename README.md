@@ -76,6 +76,9 @@ Rinkeby (modern)
 https://www.rinkeby.io/  -> connect yourself  
 Download the json file and follow the instructions  
 
+### Running geth in a docker container
+https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
+
 ## Basic Concepts
 * contract
 * account types - external or contract. Has an address and a balance. External accounts have key paris
