@@ -124,7 +124,12 @@ https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 * this === address
 * The unamed function with optional payability
 
-## Security Considirations and Best Practices
+## Fundemental Design Tradeoffs
+* Mistakes can be very costly. Unlike web apps, deployed contracts are hard to modify 
+* Modular vs. Monolith - upgradeable vs. less complex, easier to test and to reason about
+* Code Resuse vs. Duplicate - should you trust other people contracts ?
+
+## Security Considirations, PAtterns and Best Practices
 https://solidity.readthedocs.io/en/develop/security-considerations.html
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
@@ -132,6 +137,9 @@ https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis
 * Private data is viewable by anyone
 * All your public contract methods may be called maliciously
 * Bug bounty hunt your contracts on a test network and perform security audits with highly reputable 3rd parties
+* Follow platform security notifications: https://blog.ethereum.org/category/security/
+
+https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
 
 ## Solidity Design Patterns
 https://github.com/ConsenSys/smart-contract-best-practices
@@ -162,7 +170,7 @@ A contract for registration of contract addresses deployed by an external accoun
 ### Crowd Funding Patterns
 
 ### The Withdraw Pattern
-* Don't send money - let other widthdraw what they are authorized to get
+* Don't send money - let other widthdraw what they are authorized to get - favor pull vs. push payments
 
 ### Working with time
 * block.timestamp === Now() - epoch time in secs  
@@ -216,3 +224,8 @@ https://etherscan.io/
 
 ## Disassembliy and Decompilers
 https://etherscan.io/opcode-tool?a=0x9e1b57fc92eba6434251a8458811c32690f32c45  
+
+## Additional Contracts Examples - learn from code
+https://github.com/melonproject/melon/tree/master/contracts
+https://github.com/gavofyork/melon/tree/master/contracts
+
