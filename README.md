@@ -91,6 +91,13 @@ $ npm start
 ### Zepellin Solidity
 Open source solidity libs and basic contracts
 https://github.com/OpenZeppelin/zeppelin-solidity
+http://zeppelin-solidity.readthedocs.io/en/latest/
+https://openzeppelin.org/
+
+* Truffle integration:
+```
+$ truffle install zepellin
+```
 
 ### Debugging, Logging & Events
 
@@ -140,6 +147,12 @@ https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis
 * Follow platform security notifications: https://blog.ethereum.org/category/security/
 
 https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
+
+#### Security Audits
+
+https://medium.com/zeppelin-blog/blockchain-capital-token-audit-68e882d14f0
+
+https://medium.com/zeppelin-blog/cosmos-fundraiser-audit-7543a57335a4
 
 ## Solidity Design Patterns
 https://github.com/ConsenSys/smart-contract-best-practices
