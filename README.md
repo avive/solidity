@@ -121,14 +121,12 @@ https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 * The unamed function with optional payability
 
 ## Security Considirations
-
 https://solidity.readthedocs.io/en/develop/security-considerations.html
+https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
 
 ## Solidity Design Patterns
-
 https://github.com/ConsenSys/smart-contract-best-practices
-https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
 ### Testing Patterns
 * Testing with testrpc
