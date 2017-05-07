@@ -127,6 +127,7 @@ https://solidity.readthedocs.io/en/develop/security-considerations.html
 
 ## Solidity Design Patterns
 
+https://github.com/ConsenSys/smart-contract-best-practices
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
 ### Testing Patterns
