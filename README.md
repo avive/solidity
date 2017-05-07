@@ -13,6 +13,8 @@ https://www.ethereum.org/crowdsale
 https://www.ethereum.org/dao  
 https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05  
 https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf  
+https://github.com/ConsenSys/Tokens
+https://github.com/ConsenSys/MultiSigWallet
 
 ### Forums & Community
 https://ethereum.stackexchange.com/  
@@ -140,6 +142,9 @@ http://truffleframework.com/docs/getting_started/javascript-tests
 * Security audits options
 * Testing with docker
 https://github.com/Capgemini-AIE/ethereum-docker  
+
+### Factory Pattern
+A contract for registration of contract addresses deployed by an external account address   
 
 ### Enahnced Security with Multi-sig Wallets
 
