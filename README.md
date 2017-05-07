@@ -161,6 +161,13 @@ https://github.com/Capgemini-AIE/ethereum-docker
 ### Factory Pattern
 A contract for registration of contract addresses deployed by an external account address   
 
+### Pre-conditions, Mutate state & Interactions Pattern
+* Arguably a result of the famous DAO bug
+* Check all pre-conditions first, before modifying any state. Interact with external contracts only after state is modified
+
+### Throw Loudly Pattern
+* Excplicitally, beofore modifying any state when any state mutation condition fails
+
 ### Enahnced Security with Multi-sig Wallets
 
 ### Payments Lockout Pattern
