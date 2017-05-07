@@ -76,25 +76,27 @@ Rinkeby (modern)
 https://www.rinkeby.io/  -> connect yourself  
 Download the json file and follow the instructions  
 
+## Basic Concepts
+* contract
+* account types - external or contract. Has an address and a balance. External accounts have key paris
+* throw
+* Suicide
+* Get block number
+* Constant fucntions
+* Obtaining contract address
+* Global variables - msg, tx, block
+* Getting call data from the Message global var - msg.value, msg.sender, msg.data
+* Working with transactions - tx.*  
+* Working with Gas - msg.gas,  tx.gasprice - gas caller is willing to pay  
+* this === address
+* The unamed function with optional payability
+
 ## Security Considirations
 
 https://solidity.readthedocs.io/en/develop/security-considerations.html
 
 
 ## Solidity Design Patterns
-
-### Built-in Basic Patterns and Objects
-* throw
-* Suicide
-* Get block number
-* Constant fucntions
-* Obtaining contract address
-* Getting call data from the Message object - msg.value, msg.sender, msg.data
-* Working with transactions - tx.*  
-* Working with Gas - msg.gas,  tx.gasprice - gas caller is willing to pay  
-* this === address
-* The unamed function with optional payability
-
 
 https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
 
