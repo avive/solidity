@@ -6,7 +6,9 @@
 * Read all the pages here like twice:
 https://solidity.readthedocs.io/en/develop/  
 https://www.youtube.com/watch?v=8jI1TuEaTro  
-
+* Solidity changelog (new features, bug fixes, etc...)
+https://github.com/ethereum/solidity/blob/develop/Changelog.md
+ 
 ### Blogs & Guides
 https://github.com/fivedogit/solidity-baby-steps/tree/master/contracts/  
 https://www.ethereum.org/token    
