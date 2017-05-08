@@ -111,6 +111,9 @@ Rinkeby (modern)
 https://www.rinkeby.io/  -> connect yourself  
 Download the json file and follow the instructions  
 
+https://faucet.rinkeby.io/
+Get ether by creating a bpublic gist with your rinkeby account public key
+
 ### Running geth in a docker container
 https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 
@@ -239,6 +242,7 @@ http://zeppelin-solidity.readthedocs.io/en/latest/standardtoken.html
 
 ### Auction Patterns
 
+
 ### Crowd Funding Patterns
 
 ### The Withdraw Pattern
@@ -248,7 +252,7 @@ http://zeppelin-solidity.readthedocs.io/en/latest/standardtoken.html
 * block.timestamp === Now() - epoch time in secs - can be manipulated by miners. Don't use them
 * Block numbers and average block time as approximate time units
 
-### the fallback function
+### The fallback function
 * called when ether is sent using .send() to a contract's address
 * Must use under 2,300 gas - enough only for logging - don't do more stuff here
 
