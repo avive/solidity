@@ -1,9 +1,10 @@
 # Getting started with Solidity development - OS X
 
-## Solidity Language Learning
+## Learning Contracts & Solidity
 
-### docs
-Read all the pages, twice: https://solidity.readthedocs.io/en/develop/  
+### Core Docs
+* Read all the pages here like twice:
+https://solidity.readthedocs.io/en/develop/  
 https://www.youtube.com/watch?v=8jI1TuEaTro  
 
 ### Blogs & Guides
@@ -22,9 +23,11 @@ https://gitter.im/ethereum/home
 https://www.reddit.com/r/ethereum/  
 https://stackoverflow.com/questions/tagged/ethereum  
 
-### Dapps open source examples
+### Contracts Repos
 https://github.com/ethereum/dapp-bin  
 https://github.com/ethereum/dapp-bin/tree/master/getting%20started  
+
+---
 
 ## Dev tools - OS X
 
@@ -54,7 +57,8 @@ https://github.com/trufflesuite/truffle
 ```
 $ npm install -g truffle
 $ cd <new-project-folder>
-$ truffle init
+$ truffle init // for contracts only proj
+$ truffle init webpack // for a contracts + web dapp proj
 ```
 
 ### Dapple
@@ -80,6 +84,8 @@ https://plugins.jetbrains.com/plugin/9475-intellij-solidity
 
 ### Remix
 https://github.com/ethereum/remix  
+Online solidity compiler 
+https://ethereum.github.io/browser-solidity/
 
 ```
 $ git clone https://github.com/ethereum/remix
@@ -99,8 +105,6 @@ https://openzeppelin.org/
 $ truffle install zepellin
 ```
 
-### Debugging, Logging & Events
-
 ### Test Networks
 
 Rinkeby (modern)  
@@ -109,6 +113,8 @@ Download the json file and follow the instructions
 
 ### Running geth in a docker container
 https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
+
+---
 
 ## Basic Concepts
 * contract
@@ -131,81 +137,19 @@ https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 * this === address
 * The unamed function with optional payability
 
+## EVM Considirations
+* use explicit data type instead of var - for (var i=0; i < items.length;i++) - i is compiled to an uint8. If items.length > 255 then the loop will never terminate and deplate gas. Use explicit type instead without the var. e.g. - for (uint i=0; ...)
+* Avoid loops wherever possible - if a transaction exceeds its gas limit then it is rolled back but the gas is still paid. If a block reaches its gas limit then...
+* An attacker can reliably and easily make ANY call from inside your code to fail. The EVM call stack is limited to 1024 method calls. An attacker can always call a method 1023 times and call any contract's method on the 1024-th call - causing an overflowerror in the next call made from implementation of the method. e.g. causing a send to always fail. As a workaround - use pull and not push to distirbute funds
+* Be aware of solidity bugs and issues - Soldity/EVM is a young tech (not yet v1.0).
+https://github.com/ethereum/solidity/issues/
+
 ## Fundemental Design Tradeoffs
-* Mistakes can be very costly. Unlike web apps, deployed contracts are hard to modify 
+* Mistakes can be very costley. Unlike web apps, deployed contracts are hard to modify 
 * Modular vs. Monolith - upgradeable vs. less complex, easier to test and to reason about
 * Code Resuse vs. Duplicate - should you trust other people contracts ?
 
-## Security Considirations, PAtterns and Best Practices
-https://solidity.readthedocs.io/en/develop/security-considerations.html
-https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
-
-* Beware of external contracts calls - they can call back to your contract and change its control flow
-* Private data is viewable by anyone
-* All your public contract methods may be called maliciously
-* Bug bounty hunt your contracts on a test network and perform security audits with highly reputable 3rd parties
-* Follow platform security notifications: https://blog.ethereum.org/category/security/
-
-https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
-
-#### Security Audits
-
-https://medium.com/zeppelin-blog/blockchain-capital-token-audit-68e882d14f0
-
-https://medium.com/zeppelin-blog/cosmos-fundraiser-audit-7543a57335a4
-
-## Solidity Design Patterns
-https://github.com/ConsenSys/smart-contract-best-practices
-
-### Testing Patterns
-* Testing with testrpc
-* Testing with testrpc and truffle
-```
-https://github.com/ethereumjs/testrpc
-http://truffleframework.com/docs/getting_started/javascript-tests
-```
-
-* Testing a private test network
-* Testing with a public testnet
-* Security audits options
-* Testing with docker
-https://github.com/Capgemini-AIE/ethereum-docker  
-
-### Factory Pattern
-A contract for registration of contract addresses deployed by an external account address   
-
-### Pre-conditions, Mutate state & Interactions Pattern
-* Arguably a result of the famous DAO bug
-* Check all pre-conditions first, before modifying any state. Interact with external contracts only after state is modified
-
-### Throw Loudly Pattern
-* Excplicitally, beofore modifying any state when any state mutation condition fails
-* Test and throw for each pre-condition seprately
-
-### Enahnced Security with Multi-sig Wallets
-
-### Payments Lockout Pattern
-
-### Auction Patterns
-
-### Crowd Funding Patterns
-
-### The Withdraw Pattern
-* Don't send money - let other widthdraw what they are authorized to get - favor pull vs. push payments
-
-### Working with time
-* block.timestamp === Now() - epoch time in secs  
-* Block ids as time units
-* Other options for time-based operations
-
-### Design Patterns Resources
-https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns  
-https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Architecture-Designs  
-https://www.youtube.com/watch?v=XkJ8mg-R7C0  
-https://github.com/ConsenSys/gnosis-contracts  
-https://github.com/ConsenSys  
-https://github.com/toadkicker/solidity-patterns  
-
+---
 ## Data Structures and Utils
 
 ### Built-in data structures
@@ -218,6 +162,96 @@ https://github.com/ethereum/dapp-bin/tree/master/library
 
 #### key-value store patterns
 https://github.com/ConsenSys/dapp-store-contracts  
+
+---
+
+## Testing 
+* Testing with testrpc
+* Testing with testrpc and truffle
+```
+https://github.com/ethereumjs/testrpc
+http://truffleframework.com/docs/getting_started/javascript-tests
+```
+* Testing a private test network
+* Testing with a public testnet
+* Security audits options
+* Testing with docker
+* Coverage tool https://github.com/JoinColony/solcover
+* Testing Rollout - testrpc, testnet, beta on privte net, beta on public net, relase public net
+
+https://github.com/Capgemini-AIE/ethereum-docker  
+
+
+## Security - Considirations, Patterns & Best Practices
+https://solidity.readthedocs.io/en/develop/security-considerations.html
+https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis  
+
+* Beware of external contracts calls - they can call back to your contract and change its control flow
+* Private data is viewable by anyone
+* All your public contract methods may be called maliciously
+* Bug bounty hunt your contracts on a test network and perform security audits with highly reputable 3rd parties
+* Follow platform security notifications: https://blog.ethereum.org/category/security/
+
+https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
+
+### Security Audits
+https://medium.com/zeppelin-blog/blockchain-capital-token-audit-68e882d14f0
+https://medium.com/zeppelin-blog/cosmos-fundraiser-audit-7543a57335a4
+
+### Security Additional Resources
+http://chriseth.github.io/notes/talks/safe_solidity/#/
+https://blog.ethereum.org/2016/06/10/smart-contract-security/
+https://blog.ethereum.org/2016/06/19/thinking-smart-contract-security/
+
+---
+
+## Debugging, Logging & Events
+
+----
+
+## Solidity Design Patterns
+https://github.com/ConsenSys/smart-contract-best-practices
+
+### Factory Pattern
+A contract for registration of contract addresses deployed by an external account address   
+
+### Pre-conditions, Mutate state & Interactions Pattern
+* Arguably a result of the famous DAO bug
+* Check all pre-conditions first, before modifying any state. Interact with external contracts only after state is modified
+
+### Throw Loudly Pattern
+* Excplicitally, beofore modifying any state when any state mutation condition fails
+* Test and throw for each pre-condition seprately
+
+### Auto Bug Bounties Pattern
+* Build invariants calculation into your contract - contract state is valid while all invariants hold
+* Let researches try to corrupt your invariants for an award on a private copy of your contract
+https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
+https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/Bounty.sol
+
+### Standard, Basic and Crowdsale Token Patterns
+* Standard interface and contract to allow dapps and wallets to communicate with contracts that have tokens.
+http://zeppelin-solidity.readthedocs.io/en/latest/standardtoken.html
+
+### Enahnced Security with Multi-sig Wallets
+
+### Payments Lockouts Pattern
+
+### Auction Patterns
+
+### Crowd Funding Patterns
+
+### The Withdraw Pattern
+* Don't send money - let other widthdraw what they are authorized to get - favor pull vs. push payments
+
+### Working with time
+* block.timestamp === Now() - epoch time in secs - can be manipulated by miners. Don't use them
+* Block numbers and average block time as approximate time units
+
+### the fallback function
+* called when ether is sent using .send() to a contract's address
+* Must use under 2,300 gas - enough only for logging - don't do more stuff here
+
 
 ### Classic Contracts
 
@@ -237,6 +271,17 @@ https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150
 https://github.com/golemfactory/golem-crowdfunding  
 https://github.com/ConsenSys/dapp-store-contracts  
 
+### Design Patterns Resources
+https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns  
+https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Dapp-Architecture-Designs  
+https://www.youtube.com/watch?v=XkJ8mg-R7C0  
+https://github.com/ConsenSys/gnosis-contracts  
+https://github.com/ConsenSys  
+https://github.com/toadkicker/solidity-patterns  
+https://github.com/ConsenSys/smart-contract-best-practices
+
+---
+
 ## Block Explorers & Network Stats
 https://etherchain.org/  
 https://ethstats.net/  
@@ -249,4 +294,13 @@ https://etherscan.io/opcode-tool?a=0x9e1b57fc92eba6434251a8458811c32690f32c45
 ## Additional Contracts Examples - learn from code
 https://github.com/melonproject/melon/tree/master/contracts
 https://github.com/gavofyork/melon/tree/master/contracts
+https://github.com/ethereum/dapp-bin/tree/master/getting%20started  
+
+## Additional Tools
+https://github.com/raineorshine/solgraph
+
+## Solidity Style Guide
+http://solidity.readthedocs.io/en/latest/style-guide.html
+
+
 
