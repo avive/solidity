@@ -76,12 +76,12 @@ $ sudo npm install -g ethereumjs-testrpc
 $ testrpc
 ```
 
-* Testrpc dcoker
+Testrpc dcoker
 ```
 $ docker run -d -p 8545:8545 ethereumjs/testrpc:latest
 ```
 
-### Intellij-Solidity syntax support
+### Intellij Solidity syntax support
 https://plugins.jetbrains.com/plugin/9475-intellij-solidity  
 
 ### Remix
@@ -96,39 +96,42 @@ $ npm install
 $ npm start
 ```
 
-### Zepellin Solidity
+### OpenZepellin
 Open source solidity libs and basic contracts
 https://github.com/OpenZeppelin/zeppelin-solidity
 http://zeppelin-solidity.readthedocs.io/en/latest/
 https://openzeppelin.org/
 
-* Truffle integration:
-```
-$ truffle install zepellin
-```
+Truffle integration - use npm to install zepellin contracts
 
 ### Test Networks
 
-Rinkeby (modern)  
+* Rinkeby (modern)  
 https://www.rinkeby.io/  -> connect yourself  
 Download the json file and follow the instructions  
 
 https://faucet.rinkeby.io/
 Get ether by creating a bpublic gist with your rinkeby account public key
 
-### Running geth in a docker container
+### Running geth in a container
 https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
+
+### Block Explorers & Network Stats
+https://etherchain.org/  
+https://ethstats.net/  
+https://live.ether.camp/  
+https://etherscan.io/ 
 
 ---
 
 ## Basic Concepts
-* contract
+* contracts
 * account types - external or contract. Has an address and a balance. External accounts have key paris
 * transactions - tpyes: contract creation, move funds to an account, call a contract method
 * message calls - calldata area, used in transactions
 * delegate calls - using caller context for library / util functions
 * Gas - gas price and gas amount set by transaction initiator. Used for code execution
-* Events
+* Events & Logs
 * EVM - stack-based machine, contract storage and memory (runtime env)
 * throw
 * Suicide
@@ -145,8 +148,9 @@ https://github.com/ethereum/go-ethereum/wiki/Running-in-Docker
 ## EVM Considirations
 * use explicit data type instead of var - for (var i=0; i < items.length;i++) - i is compiled to an uint8. If items.length > 255 then the loop will never terminate and deplate gas. Use explicit type instead without the var. e.g. - for (uint i=0; ...)
 * Avoid loops wherever possible - if a transaction exceeds its gas limit then it is rolled back but the gas is still paid. If a block reaches its gas limit then...
-* An attacker can reliably and easily make ANY call from inside your code to fail. The EVM call stack is limited to 1024 method calls. An attacker can always call a method 1023 times and call any contract's method on the 1024-th call - causing an overflowerror in the next call made from implementation of the method. e.g. causing a send to always fail. As a workaround - use pull and not push to distirbute funds
-* Be aware of solidity bugs and issues - Soldity/EVM is a young tech (not yet v1.0).
+* There are 20 kinds of overflow/underflow when working with the supported integeral data types - use safe math. e.g. SafeMath.sol
+* An attacker can reliably and easily make ANY call from inside your code to fail. The EVM call stack is limited to 1024 method calls. An attacker can always call a method 1023 times and call any contract's method on the 1024-th call - causing an overflow error in the next call made from implementation of the method. e.g. causing a send to always fail. As a workaround - use pull and not push to distirbute funds
+* Be aware of solidity bugs and issues - Soldity/EVM is a young tech (not yet v1.0)
 https://github.com/ethereum/solidity/issues/
 
 ## Fundemental Design Tradeoffs
@@ -155,18 +159,25 @@ https://github.com/ethereum/solidity/issues/
 * Code Resuse vs. Duplicate - should you trust other people contracts ?
 
 ---
-## Data Structures and Utils
+## Data Structures, Libraries and Utils
 
-### Built-in data structures
+### Built-in data types
+* basic data types
 * structs
-* mappings
+* mappings - associative arrays with all non-existing items map to 0/null
 * state vars
 
-### Additional data structures
+### Std
+https://github.com/ethereum/solidity/tree/develop/std
+
+### Additional Data Structures
 https://github.com/ethereum/dapp-bin/tree/master/library  
 
-#### key-value store patterns
+### key-value Stores
 https://github.com/ConsenSys/dapp-store-contracts  
+
+### Live Libs Project
+https://github.com/consensys/live-libs
 
 ---
 
@@ -186,6 +197,28 @@ http://truffleframework.com/docs/getting_started/javascript-tests
 
 https://github.com/Capgemini-AIE/ethereum-docker  
 
+## Debugging, Logging & Events
+
+* Events use cases intro - https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e
+
+## Disassembliy and Decompilers
+https://etherscan.io/opcode-tool?a=0x9e1b57fc92eba6434251a8458811c32690f32c45  
+
+## Additional Contracts Examples - learn from code
+https://github.com/melonproject/melon/tree/master/contracts
+https://github.com/gavofyork/melon/tree/master/contracts
+https://github.com/ethereum/dapp-bin/tree/master/getting%20started  
+
+## Additional Tools
+https://github.com/raineorshine/solgraph
+
+## Community Standards
+* ERC20 - standard coin: https://github.com/ethereum/EIPs/issues/20
+
+## Coding Style Guide
+http://solidity.readthedocs.io/en/latest/style-guide.html
+
+---
 
 ## Security - Considirations, Patterns & Best Practices
 https://solidity.readthedocs.io/en/develop/security-considerations.html
@@ -203,79 +236,60 @@ https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97
 https://medium.com/zeppelin-blog/blockchain-capital-token-audit-68e882d14f0
 https://medium.com/zeppelin-blog/cosmos-fundraiser-audit-7543a57335a4
 
-### Security Additional Resources
+### Additional Security Resources
 http://chriseth.github.io/notes/talks/safe_solidity/#/
 https://blog.ethereum.org/2016/06/10/smart-contract-security/
 https://blog.ethereum.org/2016/06/19/thinking-smart-contract-security/
 
----
-
-## Debugging, Logging & Events
-
 ----
 
-## Solidity Design Patterns
-https://github.com/ConsenSys/smart-contract-best-practices
+## Design Patterns
 
-### Factory Pattern
+### Factory
 A contract for registration of contract addresses deployed by an external account address   
 
-### Pre-conditions, Mutate state & Interactions Pattern
+### Pre, Mutate & Interact
 * Arguably a result of the famous DAO bug
-* Check all pre-conditions first, before modifying any state. Interact with external contracts only after state is modified
+* Check all pre-conditions first before modifying any state. Interact with external contracts only after state is modified
 
-### Throw Loudly Pattern
-* Excplicitally, beofore modifying any state when any state mutation condition fails
+### Throw Loudly
+* Any pre-condition failure should throw excplicitally, beofore any state modificaiton is performed
 * Test and throw for each pre-condition seprately
-
-### Auto Bug Bounties Pattern
+* Use this consistnelty in all code instead of conditional executaiton after a pre-condition check in an if statement
+ 
+### Auto Bug Bounty
 * Build invariants calculation into your contract - contract state is valid while all invariants hold
 * Let researches try to corrupt your invariants for an award on a private copy of your contract
 https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
 https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/Bounty.sol
 
-### Standard, Basic and Crowdsale Token Patterns
+### Standard, Basic and Crowdsale Tokens
 * Standard interface and contract to allow dapps and wallets to communicate with contracts that have tokens.
 http://zeppelin-solidity.readthedocs.io/en/latest/standardtoken.html
 
-### Enahnced Security with Multi-sig Wallets
+### Multi-sig Wallets
+It is recommended that contracts that store large ammounts of funds will not be controlled by one account (pub/priv key paris) but by a mutli-sig wallet or by a key escrew service.
 
-### Payments Lockouts Pattern
+### Avoiding Magic Numbers
+* Convert magic numbers such as 15 days to a contract constant
 
-### Auction Patterns
+### Withdraw 
+* Don't send money - let other widthdraw what they are authorized to get - favor pull vs. push payments. Issues with send: https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Fallback-functions-and-the-fundamental-limitations-of-using-send%28%29-in-Ethereum-&-Solidity#abuse
 
+### Time
+* block.timestamp === Now() - epoch time in secs - can be manipulated by miners. Don't use this.
+* Block numbers and average block time as approximate time units - block.number - assumes a constant rate of block generation in the future which may not be accurate - use with care. https://ethereum.stackexchange.com/questions/413/can-a-contract-safely-rely-on-block-timestamp
 
-### Crowd Funding Patterns
-
-### The Withdraw Pattern
-* Don't send money - let other widthdraw what they are authorized to get - favor pull vs. push payments
-
-### Working with time
-* block.timestamp === Now() - epoch time in secs - can be manipulated by miners. Don't use them
-* Block numbers and average block time as approximate time units
-
-### The fallback function
-* called when ether is sent using .send() to a contract's address
+### Fallback
+* Fallback function called when ether is sent using .send() to a contract's address
 * Must use under 2,300 gas - enough only for logging - don't do more stuff here
 
-
-### Classic Contracts
-
-### Milti-sig Wallets
-
-### Circut Breakers
+### Circut Breaker
 Designing for failure and worse-case scenarios
 
 ### Risk Management
 * Rate limiting
 * Max usage / Lockouts
-
-### Crowd Funding Campaigns - design and implementation examples
-Golem Campaign    
-https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
-https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
-https://github.com/golemfactory/golem-crowdfunding  
-https://github.com/ConsenSys/dapp-store-contracts  
 
 ### Design Patterns Resources
 https://github.com/ethereum/wiki/wiki/Useful-%C3%90app-Patterns  
@@ -288,25 +302,29 @@ https://github.com/ConsenSys/smart-contract-best-practices
 
 ---
 
-## Block Explorers & Network Stats
-https://etherchain.org/  
-https://ethstats.net/  
-https://live.ether.camp/  
-https://etherscan.io/  
+## Crowd Funding Patterns
 
-## Disassembliy and Decompilers
-https://etherscan.io/opcode-tool?a=0x9e1b57fc92eba6434251a8458811c32690f32c45  
+### Crowd Funding Campaigns - design and implementation examples
+* Golem Campaign    
+https://blog.golemproject.net/the-golem-crowdfunding-summary-8a3504375aa7  
+https://blog.golemproject.net/gnt-crowdfunding-contract-in-pictures-d6b5a2e69150  
+https://github.com/golemfactory/golem-crowdfunding  
+ 
+* Blockchain Capital Campaign
+https://medium.com/zeppelin-blog/blockchain-capital-token-audit-68e882d14f0
+https://github.com/BCAPtoken/BCAPToken/tree/5cb5e76338cc47343ba9268663a915337c8b268e/sol
 
-## Additional Contracts Examples - learn from code
-https://github.com/melonproject/melon/tree/master/contracts
-https://github.com/gavofyork/melon/tree/master/contracts
-https://github.com/ethereum/dapp-bin/tree/master/getting%20started  
+* rlc-token 
+https://github.com/iExecBlockchainComputing/rlc-token 
 
-## Additional Tools
-https://github.com/raineorshine/solgraph
+* Cosmos
+https://github.com/cosmos/fundraiser-lib/tree/693cf3f32e9fd679216372876dda86fa57a3277e https://medium.com/zeppelin-blog/cosmos-fundraiser-audit-7543a57335a4
 
-## Solidity Style Guide
-http://solidity.readthedocs.io/en/latest/style-guide.html
+* Matchpool
+https://github.com/Matchpool/contracts https://medium.com/zeppelin-blog/matchpool-gup-token-audit-852a70330f2
+
+---
+
 
 
 
